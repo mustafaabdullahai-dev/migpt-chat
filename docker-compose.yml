@@ -1,0 +1,33 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.backend
+    environment:
+      DEMO_MODE: ${DEMO_MODE:-true}
+      LLM_PROVIDER: groq
+      GROQ_MODEL: ${GROQ_MODEL:-qwen/qwen3.8-27b}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      SEARCH_PROVIDER: ${SEARCH_PROVIDER:-duckduckgo}
+      ENABLE_WEB_SEARCH: "true"
+      ENABLE_CACHE: "false"
+      DATA_DIR: /app/data
+      DATABASE_URL: sqlite:////app/data/app.db
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - backend_data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    depends_on:
+      - backend
+    ports:
+      - "${FRONTEND_PORT:-5173}:80"
+    restart: unless-stopped
+
+volumes:
+  backend_data:
