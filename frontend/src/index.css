@@ -29,6 +29,7 @@
   --c-accent: #0d0d0d;
   --c-danger: #ef4444;
   --c-success: #22c55e;
+  --c-logo-ring: rgba(0, 0, 0, 0.35);
 }
 
 .dark,
@@ -45,6 +46,20 @@
   --c-accent: #ececec;
   --c-danger: #ef4444;
   --c-success: #22c55e;
+  --c-logo-ring: #2f6fed;
+}
+
+.logo-outline {
+  box-shadow:
+    0 0 0 1px var(--c-bg),
+    0 0 0 2px var(--c-logo-ring);
+}
+
+/* Sidebar is always dark (bg-black) — keep the logo ring blue in both themes. */
+.sidebar .logo-outline,
+aside .logo-outline {
+  --c-logo-ring: #2f6fed;
+  box-shadow: 0 0 0 1px #000000, 0 0 0 2px #2f6fed;
 }
 
 html,

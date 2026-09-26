@@ -184,7 +184,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
       {/* Sidebar Top */}
       <div className="flex h-12 items-center justify-between px-3">
         <div className="flex items-center gap-2">
-          <img src={migptLogo} alt="MiGPT" className="h-6 w-6 rounded-md object-cover" />
+          <img src={migptLogo} alt="MiGPT" className="logo-outline h-6 w-6 rounded-md object-cover" />
           <span className="flex items-center gap-1 text-[14px] font-semibold tracking-tight">
             MiGPT
           </span>
@@ -328,7 +328,7 @@ function SidebarContent({ onClose }: { onClose?: () => void }) {
             <img
               src={migptLogo}
               alt="MiGPT"
-              className="h-7 w-7 shrink-0 rounded-full object-cover"
+              className="logo-outline h-7 w-7 shrink-0 rounded-full object-cover"
             />
             <div className="min-w-0 flex-1 text-left">
               <p

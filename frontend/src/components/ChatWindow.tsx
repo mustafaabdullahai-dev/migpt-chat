@@ -28,7 +28,7 @@ export function ChatWindow() {
             <img
               src={migptLogo}
               alt="MiGPT"
-              className="mb-5 h-14 w-14 rounded-2xl object-cover shadow-sm"
+              className="logo-outline mb-5 h-14 w-14 rounded-2xl object-cover shadow-sm"
             />
             <h1 className="text-2xl font-semibold tracking-tight text-primary">
               What can I help with?
@@ -53,7 +53,7 @@ export function ChatWindow() {
 
           {sending && (
             <div className="flex gap-4">
-              <img src={migptLogo} alt="MiGPT" className="mt-1 h-6 w-6 shrink-0 rounded-lg object-cover" />
+              <img src={migptLogo} alt="MiGPT" className="logo-outline mt-1 h-6 w-6 shrink-0 rounded-lg object-cover" />
               <div className="min-w-0 flex-1">
                 <ErrorBoundary>
                   {!streamingText && (

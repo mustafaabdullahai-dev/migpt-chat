@@ -25,7 +25,7 @@ export function Header({
           title="MiGPT"
         >
           {!sidebarOpen && (
-            <img src={migptLogo} alt="MiGPT" className="h-7 w-7 rounded-lg object-cover" />
+            <img src={migptLogo} alt="MiGPT" className="logo-outline h-7 w-7 rounded-lg object-cover" />
           )}
           <span className="text-[17px] font-semibold tracking-tight text-primary">MiGPT</span>
         </button>

@@ -79,7 +79,7 @@ function AssistantMessage({ msg }: { msg: ChatMessage }) {
       <img
         src={migptLogo}
         alt="MiGPT"
-        className="mt-1 h-6 w-6 shrink-0 rounded-lg object-cover"
+        className="logo-outline mt-1 h-6 w-6 shrink-0 rounded-lg object-cover"
       />
       <div className="min-w-0 flex-1">
         {tool_runs.length > 0 && <ToolActivity runs={tool_runs} />}
