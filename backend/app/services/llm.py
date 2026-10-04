@@ -78,7 +78,7 @@ class _MockChatModel(BaseChatModel):
     ) -> ChatResult:
         query = self._last_user_text(messages)
         answer = (
-            "**Demo mode active** — no API key configured.\n\n"
+            "**MiGPT Demo Mode** — no API key configured.\n\n"
             f"Your question was: *{query[:400]}*\n\n"
             "Set `GROQ_API_KEY` and `DEMO_MODE=false` in `backend/.env` to enable the real Groq-powered "
             "agent with web search, calculator, research and document RAG."
