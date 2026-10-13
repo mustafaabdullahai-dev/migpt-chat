@@ -117,4 +117,4 @@ Interactive docs: http://localhost:8000/docs
 
 ---
 
-#GenAIwithAM
+**#GenAIwithAM** — GenAI, LLM and AI-agent projects by Abdullah Mustafa.
