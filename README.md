@@ -114,3 +114,7 @@ Interactive docs: http://localhost:8000/docs
 - SSRF guards on URL validation (blocks private/localhost/file/ftp).
 - Uploads validated by extension + magic bytes.
 - CORS is `*` for dev — scope to a real origin in production.
+
+---
+
+#GenAIwithAM
